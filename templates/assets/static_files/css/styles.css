@@ -9,45 +9,45 @@
 
 @font-face {
     font-family: 'Gotham-ProRegular';
-    src: url('../../assets/fonts/GothamProRegular.eot');
-    src: url('../../assets/fonts/GothamProRegular.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/GothamProRegular.woff') format('woff'),
-    url('../../assets/fonts/GothamProRegular.ttf') format('truetype');
+    src: url('../fonts/GothamProRegular.eot');
+    src: url('../fonts/GothamProRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamProRegular.woff') format('woff'),
+    url('../fonts/GothamProRegular.ttf') format('truetype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Gotham_ProBlack';
-    src: url('../../assets/fonts/GothamProBlack.eot');
-    src: url('../../assets/fonts/GothamProBlack.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/GothamProBlack.woff') format('woff'),
-    url('../../assets/fonts/GothamProBlack.ttf') format('truetype');
+    src: url('../fonts/GothamProBlack.eot');
+    src: url('../fonts/GothamProBlack.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamProBlack.woff') format('woff'),
+    url('../fonts/GothamProBlack.ttf') format('truetype');
     /*font-weight: bold;*/
 }
 
 @font-face {
     font-family: 'Bebas_Neueregular';
-    src: url('../../assets/fonts/BebasRegular.eot');
-    src: url('../../assets/fonts/BebasRegular.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/BebasRegular.woff') format('woff'),
-    url('../../assets/fonts/BebasRegular.ttf') format('truetype');
+    src: url('../fonts/BebasRegular.eot');
+    src: url('../fonts/BebasRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasRegular.woff') format('woff'),
+    url('../fonts/BebasRegular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Bebas_NeueBold';
-    src: url('../../assets/fonts/BebasBold.eot');
-    src: url('../../assets/fonts/BebasBold.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/BebasBold.woff') format('woff'),
-    url('../../assets/fonts/BebasBold.ttf') format('truetype');
+    src: url('../fonts/BebasBold.eot');
+    src: url('../fonts/BebasBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasBold.woff') format('woff'),
+    url('../fonts/BebasBold.ttf') format('truetype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Bebas_NeueLight';
-    src: url('../../assets/fonts/BebasLight.eot');
-    src: url('../../assets/fonts/BebasLight.eot?#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/BebasLight.woff') format('woff'),
-    url('../../assets/fonts/BebasLight.ttf') format('truetype');
+    src: url('../fonts/BebasLight.eot');
+    src: url('../fonts/BebasLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasLight.woff') format('woff'),
+    url('../fonts/BebasLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -753,17 +753,17 @@ input {
 }
 
 input[type="text"] {
-    background: #fff url("../../assets/images/name.png") 12px 12px no-repeat;
+    background: #fff url("../images/name.png") 12px 12px no-repeat;
 }
 
 input[type="tel"] {
-    background: #fff url("../../assets/images/smartphone.png") 12px 12px no-repeat;
+    background: #fff url("../images/smartphone.png") 12px 12px no-repeat;
     margin-right: 20px;
     margin-left: 20px;
 }
 
 input[type="email"] {
-    background: #fff url("../../assets/images/email.png") 12px 14px no-repeat;
+    background: #fff url("../images/email.png") 12px 14px no-repeat;
 }
 
 input[type="submit"] {

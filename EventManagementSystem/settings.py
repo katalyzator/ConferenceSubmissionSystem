@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'conference',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -108,5 +109,5 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "EventManagementSystem", "s
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "EventManagementSystem", "static", "static_root")
 
 STATICFILES_DIRS = (
-    os.path.join(os.path.dirname(BASE_DIR), "EventManagementSystem", "templates", "assets"),
+    os.path.join(os.path.dirname(BASE_DIR), "EventManagementSystem", "templates", "assets", "static_files"),
 )

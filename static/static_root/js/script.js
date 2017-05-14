@@ -1,7 +1,6 @@
-
 $(document).ready(function () {
-    
-    $('#custom-file-upload').change(function(e) {
+
+    $('#custom-file-upload').change(function (e) {
         var filename = e.target.files[0].name;
         console.log(filename);
         $('.filupp-file-name').html(filename);
@@ -9,14 +8,14 @@ $(document).ready(function () {
 
     var txt = $('.comment > p');
     $(txt).each(function (i, obj) {
-        if($(obj).text().length > 280) {
-            $(obj).text($(obj).text().substring(0,277)+'...')
+        if ($(obj).text().length > 280) {
+            $(obj).text($(obj).text().substring(0, 277) + '...')
         }
     });
 
-    $('a[href^="#"]').on('click', function(event) {
+    $('a[href^="#"]').on('click', function (event) {
         var target = $(this.getAttribute('href'));
-        if( target.length ) {
+        if (target.length) {
             event.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
@@ -24,9 +23,9 @@ $(document).ready(function () {
         }
     });
 
-    $(function() {
+    $(function () {
         //----- OPEN
-        $('[data-popup-open]').on('click', function(e)  {
+        $('[data-popup-open]').on('click', function (e) {
             var targeted_popup_class = jQuery(this).attr('data-popup-open');
             $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
 
@@ -34,7 +33,7 @@ $(document).ready(function () {
         });
 
         //----- CLOSE
-        $('[data-popup-close]').on('click', function(e)  {
+        $('[data-popup-close]').on('click', function (e) {
 
             e.preventDefault();
             var targeted_popup_class = jQuery(this).attr('data-popup-close');
@@ -44,6 +43,5 @@ $(document).ready(function () {
         });
     });
 
-    
 
 });

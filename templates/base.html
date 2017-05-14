@@ -12,7 +12,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
 
+        <div class="application">Заполните форму</div>
+
+        <p>Мы свяжемся с вами в ближайшее время</p>
+
+        <form action="send_email.php" method="post" id="requestForm">
+            <input type="text" name="name" maxlength="25" placeholder="Имя">
+            <input type="tel" name="number" placeholder="Телефон с кодом">
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="submit" value="Отправить">
+        </form>
+        <a class="popup-close" data-popup-close="popup-1"><img src="assets/static_files/images/close-btn.png" alt="image"></a>
+    </div>
+</div>
 {% block content %}
 
 
@@ -27,7 +42,12 @@
 
 {% block scripts %}
 
+    <script>
 
+
+
+
+    </script>
 
 {% endblock %}
 </body>

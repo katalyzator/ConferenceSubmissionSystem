@@ -6,3 +6,10 @@ def index_view(request):
     template = 'index.html'
 
     return render(request, template, context)
+
+
+def event_view(request):
+    context = {}
+    template = 'event.html'
+
+    return render(request, template, context)

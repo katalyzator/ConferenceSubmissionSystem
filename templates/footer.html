@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<footer id="connection">
+    <div class="grid line9">
+        <div class="content4">
+            <h5>контактная информация</h5>
+
+            <div class="line"></div>
+            <p>Оставьте свои данные и мы свяжемся с вами или воспользуйтесь контактной<br> информацией и свяжитесь с
+                нами сами</p>
+        </div>
+        <div class="footer-block group">
+            <form action="#" method="get">
+                <input type="text" name="name" maxlength="25" placeholder="Имя">
+                <input type="tel" name="number" placeholder="Телефон с кодом">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="submit" value="Отправить">
+            </form>
+
+            <div class="container">
+                <div class="office group"><img src="{% static 'images/footer-phone.png' %}" alt="image" class="first-image">
+                    +996 550 055577
+                </div>
+                <div class="office group"><img src="{% static 'images/footer-message.png' %}" alt="image" class="second-image">
+                    sunrisestudiopro@gmail.com
+                </div>
+                <div class="office group"><img src="{% static 'images/location-icon.png' %}" alt="image" class="third-image">
+                    Бишкек, ул. Калык Акиева 66,<br> ТЦ Весна, 3 этаж, офис №37
+                </div>
+            </div>
+        </div>
+
+        <div class="sunrise"><p>© 2016 SUNRISE STUDIO</p></div>
+
+    </div>
+</footer>

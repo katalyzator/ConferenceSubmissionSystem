@@ -1,0 +1,323 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <div class="popup" data-popup="popup-1">
+        <div class="popup-inner">
+
+            <div class="application">Заполните форму</div>
+
+            <p>Мы свяжемся с вами в ближайшее время</p>
+
+            <form action="send_email.php" method="post" id="requestForm">
+                <input type="text" name="name" maxlength="25" placeholder="Имя">
+                <input type="tel" name="number" placeholder="Телефон с кодом">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="submit" value="Отправить">
+            </form>
+            <a class="popup-close" data-popup-close="popup-1"><img src="assets/images/close-btn.png" alt="image"></a>
+        </div>
+    </div>
+    {% include 'header.html' %}
+
+    <div class="bg1">
+        <div class="content1 slider_grid">
+            <div class="slider">
+                <div class="sl_slide">
+                    <img src="{% static 'images/sl_image1.jpg' %}" alt="image">
+                </div>
+
+                <div class="sl_slide">
+                    <img src="{% static 'images/sl_image1.jpg' %}" alt="image">
+                </div>
+
+                <div class="sl_slide">
+                    <img src="{% static 'images/sl_image1.jpg' %}" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="t_bg2">
+        <div class="t_content2 grid">
+            <h2>Предстоящие конференции</h2>
+
+            <div class="tours tours_cart">
+                <a href="#" class="place">
+                    <span class="n_place">10 май 2017</span>
+                    <span class="n_place location">Кыргызстан</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+
+                    </div>
+                    <img src="assets/images/tour1.jpg" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">10 май 2017</span>
+                    <span class="n_place location">Кыргызстан</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+
+                    </div>
+                    <img src="assets/images/tour1.jpg" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">10 май 2017</span>
+                    <span class="n_place location">Кыргызстан</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+
+                    </div>
+                    <img src="assets/images/tour1.jpg" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">10 май 2017</span>
+                    <span class="n_place location">Кыргызстан</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+
+                    </div>
+                    <img src="assets/images/tour1.jpg" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">10 май 2017</span>
+                    <span class="n_place location">Кыргызстан</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+
+                    </div>
+                    <img src="assets/images/tour1.jpg" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">10 май 2017</span>
+                    <span class="n_place location">Кыргызстан</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+
+                    </div>
+                    <img src="assets/images/tour1.jpg" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">10 май 2017</span>
+                    <span class="n_place location">Кыргызстан</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+
+                    </div>
+                    <img src="assets/images/tour1.jpg" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">10 май 2017</span>
+                    <span class="n_place location">Кыргызстан</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+
+                    </div>
+                    <img src="assets/images/tour1.jpg" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+            </div>
+
+            <div class="pagination">
+                <a href="#"></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">...</a>
+                <a href="#">12</a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment_bg">
+        <div class="commnet_content grid">
+            <div class="comments_block">
+                <h2>Отзывы</h2>
+
+                <div class="comments">
+                    <a href="#" class="comment">
+                        <div class="com_img">
+                            <img src="assets/images/comm1.jpg" alt="image">
+                        </div>
+
+                        <h3>Сон Кол</h3>
+
+                        <p>
+                            В день поездки погода была отличная, озеро невероятной красоты. Дорога была долгой, и
+                            немного
+                            утомительной, но оно того стоило. Успели сделать много снимков, насладиться природой и
+                            услышать
+                            множество историй множество историй множество историй множество историй множество историй
+                        </p>
+
+                        <div class="author">
+                            <p>Давыдова Мадина</p>
+                            <p>18.04.2017</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="comment">
+                        <div class="com_img">
+                            <img src="assets/images/comm1.jpg" alt="image">
+                        </div>
+
+                        <h3>Сон Кол</h3>
+
+                        <p>
+                            В день поездки погода была отличная, озеро невероятной красоты. Дорога была долгой, и
+                            немного
+                            утомительной, но оно того стоило. Успели сделать много снимков, насладиться природой и
+                            услышать
+                            множество историй множество историй множество историй множество историймножество историй
+                        </p>
+
+                        <div class="author">
+                            <p>Давыдова Мадина</p>
+                            <p>18.04.2017</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="comment">
+                        <div class="com_img">
+                            <img src="assets/images/comm1.jpg" alt="image">
+                        </div>
+
+                        <h3>Сон Кол</h3>
+
+                        <p>
+                            В день поездки погода была отличная, озеро невероятной красоты. Дорога была долгой, и
+                            немного
+                            утомительной, но оно того стоило. Успели сделать много снимков, насладиться природой и
+                            услышать
+                            множество историй множество историй множество историй множество историй множество историй
+                        </p>
+
+                        <div class="author">
+                            <p>Давыдова Мадина</p>
+                            <p>18.04.2017</p>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="#" class="link_button">Все отзывы</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="background11" id="partnership">
+        <div class="grid">
+            <div class="content11">
+                <h5>партнеры мероприятия</h5>
+
+                <div class="block8">
+                    <a href="#"> <img src="assets/images/company1.png" alt="company"></a>
+                    <a href="#"> <img src="assets/images/company2.png" alt="company"></a>
+                    <a href="#"> <img src="assets/images/company3.png" alt="company"></a>
+                    <a href="#"> <img src="assets/images/company4.png" alt="company"></a>
+                    <a href="#"> <img src="assets/images/company5.png" alt="company"></a>
+                    <a href="#"> <img src="assets/images/company6.png" alt="company"></a>
+                    <a href="#"> <img src="assets/images/company7.png" alt="company"></a>
+                    <a href="#"> <img src="assets/images/company8.png" alt="company"></a>
+                    <a href="#"> <img src="assets/images/company9.png" alt="company"></a>
+                    <a href="#"><img src="assets/images/company10.png" alt="company"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script>
+        $('.slider').slick({
+            cssEase: 'ease-in',
+            autoplay: true,
+            // autoplaySpeed: 2000,
+            arrows: false,
+            dots: true
+        });
+    </script>
+{% endblock %}

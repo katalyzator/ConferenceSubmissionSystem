@@ -1,0 +1,34 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Грант Кардон</title>
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'slick/slick.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+{% block content %}
+
+
+
+{% endblock %}
+
+{% include 'footer.html' %}
+
+<script src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+<script src="{% static 'slick/slick.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+{% block scripts %}
+
+
+
+{% endblock %}
+</body>
+</html>

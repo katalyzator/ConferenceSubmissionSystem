@@ -38,3 +38,34 @@ class Personal(models.Model):
 
     def __unicode__(self):
         return smart_unicode(self.name)
+
+
+class Application(models.Model):
+    class Meta:
+        verbose_name_plural = 'Заявки на конференцию'
+        verbose_name = 'Заявка на конференцию'
+
+    conference = models.ForeignKey(Event, verbose_name='В какой конференции')
+    name = models.CharField(max_length=255, verbose_name='Name')
+    email = models.CharField(max_length=255, verbose_name='Email')
+    number = models.CharField(max_length=255, verbose_name='Номер Телефона')
+
+    def __unicode__(self):
+        return smart_unicode(self.name)
+
+
+class Feedback(models.Model):
+    class Meta:
+        verbose_name_plural = 'Отзывы'
+        verbose_name = 'Отзыв'
+
+    title = models.CharField(max_length=255, verbose_name='Название конференции')
+    person = models.CharField(max_length=255, verbose_name='ФИО')
+    text = models.TextField(verbose_name='Текст')
+    image = models.ImageField(upload_to='feedback/images', verbose_name='Фотография', blank=True)
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.title)

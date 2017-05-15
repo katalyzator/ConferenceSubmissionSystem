@@ -1,43 +1,38 @@
 {% extends 'base.html' %}
 
-
+{% load staticfiles %}
 {% block content %}
+    <div class="popup" data-popup="popup-1">
+        <div class="popup-inner">
+
+            <div class="application">Заполните форму</div>
+
+            <p>Мы свяжемся с вами в ближайшее время</p>
+
+            <form action="{% url 'get_application' id=item.id %}" method="post" id="requestForm">
+                <input type="text" name="name" maxlength="25" placeholder="Имя">
+                <input type="tel" name="number" placeholder="Телефон с кодом">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="submit" value="Отправить">
+            </form>
+            <a class="popup-close" data-popup-close="popup-1"><img src="{% static 'images/close-btn.png' %}"
+                                                                   alt="image"></a>
+        </div>
+    </div>
     {% include 'header.html' %}
 
     <div class="a_bg1">
         <div class="a_content1 grid">
             <div class="about">
                 <div class="about_img">
-                    <img src="assets/static_files/images/about_img.jpg" alt="image">
+                    <img src="{{ item.image.url }}" alt="image">
                 </div>
 
                 <div class="about_desc">
-                    <h3>Название ивента</h3>
+                    <h3>{{ item.title }}</h3>
 
-                        <p>
-                            В 2016-году была основана компания ОсОО «Борбор Эйжа» «BorborAsia». Предпосылкой создания
-                            компании
-                            послужил проект «КЕТТИК», который был организован и реализован лидером компании Бектемиром
-                            Мамаюсуповым и нашей командой. Путешествуя по кыргызской земле по проекту «КЕТТИК» мы
-                            ощутили весь
-                            размах туристического потенциала страны, благодаря чему зародилась миссия поделиться со всем
-                            миром -
-                            нашими восхищениями, самыми тёплыми чувствами, которые возникли от увиденной нами
-                            удивительной
-                            красоты природы кыргызской земли. Для достижения нашей миссии мы создали туристическое
-                            агентство.<br>
-                            Цель:<br>
-                            Наше туристическое агентство имеет разностороннее видение по созданию благоприятных условий
-                            для
-                            встреч иностранных гостей и предоставление им туристических услуг, основанных на их
-                            пожеланиях.<br>
-                            Мы стремимся к формированию стабильных и взаимовыгодных отношений с нашими клиентами и
-                            партнерами.
-                            Мы с уверенностью смотрим в будущее и не довольствуемся достигнутыми успехами, развиваясь
-                            вместе с
-                            Вами. Для этого мы обладаем всеми необходимыми материальными, интеллектуальными и духовными
-                            ресурсами.
-                        </p>
+                    <p>{{ item.text }}
+                    </p>
                 </div>
             </div>
         </div>
@@ -47,95 +42,28 @@
         <div class="a_content2 grid">
             <h2>Спикеры</h2>
 
-                <div class="team">
+            <div class="team">
+                {% for speak in speakers %}
                     <div class="member">
                         <div class="member_img">
-                            <img src="assets/static_files/images/member1.jpg" alt="image">
+                            <img src="{{ speak.image.url }}" alt="image">
                         </div>
-                        <p>Макарова Ксения</p>
+                        <p>{{ speak.name }}</p>
                         <span class="s_line"></span>
 
-                        <p>менеджер</p>
+                        <p>{{ speak.position }}</p>
                     </div>
+                {% endfor %}
 
-                    <div class="member">
-                        <div class="member_img">
-                            <img src="assets/static_files/images/member2.jpg" alt="image">
-                        </div>
-                        <p>Калматова Айжана</p>
-                        <span class="s_line"></span>
+            </div>
 
-                        <p>менеджер</p>
-                    </div>
-
-                    <div class="member">
-                        <div class="member_img">
-                            <img src="assets/static_files/images/member3.jpg" alt="image">
-                        </div>
-                        <p>Эргешев Чубак</p>
-                        <span class="s_line"></span>
-
-                        <p>маркетолог</p>
-                    </div>
-
-                    <div class="member">
-                        <div class="member_img">
-                            <img src="assets/static_files/images/member4.jpg" alt="image">
-                        </div>
-                        <p>Мережко Анна</p>
-                        <span class="s_line"></span>
-
-                        <p>маркетолог</p>
-                    </div>
-
-                    <div class="member">
-                        <div class="member_img">
-                            <img src="assets/static_files/images/member5.jpg" alt="image">
-                        </div>
-                        <p>Давыдова Карина</p>
-                        <span class="s_line"></span>
-
-                        <p>менеджер</p>
-                    </div>
-
-                    <div class="member">
-                        <div class="member_img">
-                            <img src="assets/static_files/images/member6.jpg" alt="image">
-                        </div>
-                        <p>Кайдылдаев Данияр</p>
-                        <span class="s_line"></span>
-
-                        <p>менеджер</p>
-                    </div>
-
-                    <div class="member">
-                        <div class="member_img">
-                            <img src="assets/static_files/images/member7.jpg" alt="image">
-                        </div>
-                        <p>Тугушева Малика</p>
-                        <span class="s_line"></span>
-
-                        <p>маркетолог</p>
-                    </div>
-
-                    <div class="member">
-                        <div class="member_img">
-                            <img src="assets/static_files/images/member8.jpg" alt="image">
-                        </div>
-                        <p>Мадалиева Айым</p>
-                        <span class="s_line"></span>
-
-                        <p>маркетолог</p>
-                    </div>
-                </div>
-
-                <div class="pagination">
-                    <a href="#"></a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#"></a>
-                </div>
+            <div class="pagination">
+                <a href="#"></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"></a>
+            </div>
         </div>
     </div>
 
@@ -217,7 +145,7 @@
     <div class="background5" id="time-table">
         <div class="grid">
             <div class="content5">
-                <h2>Программа<br> бизнес-интенсива</h2>
+                <h2>Conference programm</h2>
 
                 <div class="block3 group">
                     <div class="schedule">

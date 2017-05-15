@@ -29,156 +29,26 @@
             <h2>Предстоящие конференции</h2>
 
             <div class="tours tours_cart">
-                <a href="#" class="place">
-                    <span class="n_place">10 май 2017</span>
-                    <span class="n_place location">Кыргызстан</span>
+                {% for item in conference %}
+                    <a href="#" class="place">
+                        <span class="n_place">{{ item.start }}</span>
+                        <span class="n_place location">{{ item.title }}</span>
 
-                    <div class="p_hover">
-                        <div class="h_content">
-                            <span>Посмотреть</span>
+                        <div class="p_hover">
+                            <div class="h_content">
+                                <span>Посмотреть</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="tour_desc">
-                        <div class="tour_title">Кан и Гут</div>
-                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
-                    </div>
-                    <img src="assets/static_files/images/tour1.jpg" alt="image">
-                    <div class="shadow"></div>
-                </a>
-
-                <a href="#" class="place">
-                    <span class="n_place">10 май 2017</span>
-                    <span class="n_place location">Кыргызстан</span>
-
-                    <div class="p_hover">
-                        <div class="h_content">
-                            <span>Посмотреть</span>
+                        <div class="tour_desc">
+                            <div class="tour_title">Кан и Гут</div>
+                            <p>{{ item.description }}</p>
                         </div>
-                    </div>
+                        <img src="{{ item.image.url }}" alt="image">
+                        <div class="shadow"></div>
+                    </a>
 
-                    <div class="tour_desc">
-                        <div class="tour_title">Кан и Гут</div>
-                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
-
-                    </div>
-                    <img src="assets/static_files/images/tour1.jpg" alt="image">
-                    <div class="shadow"></div>
-                </a>
-
-                <a href="#" class="place">
-                    <span class="n_place">10 май 2017</span>
-                    <span class="n_place location">Кыргызстан</span>
-
-                    <div class="p_hover">
-                        <div class="h_content">
-                            <span>Посмотреть</span>
-                        </div>
-                    </div>
-
-                    <div class="tour_desc">
-                        <div class="tour_title">Кан и Гут</div>
-                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
-
-                    </div>
-                    <img src="assets/static_files/images/tour1.jpg" alt="image">
-                    <div class="shadow"></div>
-                </a>
-
-                <a href="#" class="place">
-                    <span class="n_place">10 май 2017</span>
-                    <span class="n_place location">Кыргызстан</span>
-
-                    <div class="p_hover">
-                        <div class="h_content">
-                            <span>Посмотреть</span>
-                        </div>
-                    </div>
-
-                    <div class="tour_desc">
-                        <div class="tour_title">Кан и Гут</div>
-                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
-
-                    </div>
-                    <img src="assets/static_files/images/tour1.jpg" alt="image">
-                    <div class="shadow"></div>
-                </a>
-
-                <a href="#" class="place">
-                    <span class="n_place">10 май 2017</span>
-                    <span class="n_place location">Кыргызстан</span>
-
-                    <div class="p_hover">
-                        <div class="h_content">
-                            <span>Посмотреть</span>
-                        </div>
-                    </div>
-
-                    <div class="tour_desc">
-                        <div class="tour_title">Кан и Гут</div>
-                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
-
-                    </div>
-                    <img src="assets/static_files/images/tour1.jpg" alt="image">
-                    <div class="shadow"></div>
-                </a>
-
-                <a href="#" class="place">
-                    <span class="n_place">10 май 2017</span>
-                    <span class="n_place location">Кыргызстан</span>
-
-                    <div class="p_hover">
-                        <div class="h_content">
-                            <span>Посмотреть</span>
-                        </div>
-                    </div>
-
-                    <div class="tour_desc">
-                        <div class="tour_title">Кан и Гут</div>
-                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
-
-                    </div>
-                    <img src="assets/static_files/images/tour1.jpg" alt="image">
-                    <div class="shadow"></div>
-                </a>
-
-                <a href="#" class="place">
-                    <span class="n_place">10 май 2017</span>
-                    <span class="n_place location">Кыргызстан</span>
-
-                    <div class="p_hover">
-                        <div class="h_content">
-                            <span>Посмотреть</span>
-                        </div>
-                    </div>
-
-                    <div class="tour_desc">
-                        <div class="tour_title">Кан и Гут</div>
-                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
-
-                    </div>
-                    <img src="assets/static_files/images/tour1.jpg" alt="image">
-                    <div class="shadow"></div>
-                </a>
-
-                <a href="#" class="place">
-                    <span class="n_place">10 май 2017</span>
-                    <span class="n_place location">Кыргызстан</span>
-
-                    <div class="p_hover">
-                        <div class="h_content">
-                            <span>Посмотреть</span>
-                        </div>
-                    </div>
-
-                    <div class="tour_desc">
-                        <div class="tour_title">Кан и Гут</div>
-                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
-
-                    </div>
-                    <img src="assets/static_files/images/tour1.jpg" alt="image">
-                    <div class="shadow"></div>
-                </a>
+                {% endfor %}
 
             </div>
 

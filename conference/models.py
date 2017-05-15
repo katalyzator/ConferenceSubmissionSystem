@@ -17,6 +17,7 @@ class Event(models.Model):
     text = models.TextField(verbose_name='Подробный текст')
     start = models.DateField(verbose_name='Дата Начала', default=date.today())
     finish = models.DateField(verbose_name='Дата Окончания', blank=True)
+    image = models.ImageField(upload_to='conference/images', verbose_name='Картинка')
 
     def __unicode__(self):
         return smart_unicode(self.title)
